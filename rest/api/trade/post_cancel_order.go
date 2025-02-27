@@ -21,17 +21,17 @@ type PostCancelOrderResponse struct {
 	Data []CancelOrder `json:"data"`
 }
 
-func (r PostCancelOrderResponse) GetMessage() string {
-	msg := ""
-	for _, x := range r.Data {
-		msg += x.SMsg + "/n"
-	}
-	return r.Message + "/n" + msg
-}
-
 type CancelOrder struct {
 	OrdId   string `json:"ordId"`
 	ClOrdId string `json:"clOrdId"`
 	SCode   string `json:"sCode"`
 	SMsg    string `json:"sMsg"`
+}
+
+func (r PostCancelOrderResponse) GetMessage() string {
+	msg := ""
+	for _, x := range r.Data {
+		msg += x.SMsg + " "
+	}
+	return r.Message + " " + msg
 }

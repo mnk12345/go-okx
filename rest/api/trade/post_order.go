@@ -37,3 +37,11 @@ type PostOrder struct {
 	SCode   string `json:"sCode"`
 	SMsg    string `json:"sMsg"`
 }
+
+func (r PostOrderResponse) GetMessage() string {
+	msg := ""
+	for _, x := range r.Data {
+		msg += x.SMsg + "  "
+	}
+	return r.Message + " " + msg
+}
