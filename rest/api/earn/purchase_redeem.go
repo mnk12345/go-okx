@@ -1,4 +1,4 @@
-package trade
+package earn
 
 import "github.com/iaping/go-okx/rest/api"
 
