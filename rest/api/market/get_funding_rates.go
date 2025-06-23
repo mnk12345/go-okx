@@ -35,5 +35,5 @@ type FundingRate struct {
 	Premium         string `json:"premium"`
 	SettFundingRate string `json:"settFundingRate"`
 	SettState       string `json:"settState"`
-	Ts              string `json:"ts,string"`
+	Ts              string `json:"ts"`
 }
