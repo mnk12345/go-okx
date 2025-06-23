@@ -11,10 +11,11 @@ func NewGetTradeFee(param *GetTradeFeeParam) (api.IRequest, api.IResponse) {
 }
 
 type GetTradeFeeParam struct {
-	InstType string `url:"instType"`
-	InstId   string `url:"instId,omitempty"`
-	Uly      string `url:"uly,omitempty"`
-	Category string `url:"category,omitempty"`
+	InstType   string `url:"instType"`
+	InstId     string `url:"instId,omitempty"`
+	InstFamily string `url:"instFamily,omitempty"`
+	Uly        string `url:"uly,omitempty"`
+	Category   string `url:"category,omitempty"`
 }
 
 type GetTradeFeeResponse struct {
