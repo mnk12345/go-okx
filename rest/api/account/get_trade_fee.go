@@ -24,12 +24,16 @@ type GetTradeFeeResponse struct {
 }
 
 type TradeFee struct {
-	Category string `json:"category"`
-	Taker    string `json:"taker"`
-	Maker    string `json:"maker"`
-	Delivery string `json:"delivery"`
-	Exercise string `json:"exercise"`
-	Level    string `json:"level"`
-	InstType string `json:"instType"`
-	Ts       int64  `json:"ts,string"`
+	Category  string `json:"category"`
+	Taker     string `json:"taker"`
+	Maker     string `json:"maker"`
+	TakerU    string `json:"takerU"`
+	MakerU    string `json:"makerU"`
+	TakerUSDC string `json:"takerUSDC"`
+	MakerUSDC string `json:"makerUSDC"`
+	Delivery  string `json:"delivery"`
+	Exercise  string `json:"exercise"`
+	Level     string `json:"level"`
+	InstType  string `json:"instType"`
+	Ts        int64  `json:"ts,string"`
 }
