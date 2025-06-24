@@ -13,9 +13,10 @@ func NewGetOrder(param *GetOrderParam) (api.IRequest, api.IResponse) {
 }
 
 type GetOrderParam struct {
-	InstId  string `url:"instId"`
-	OrdId   string `url:"ordId,omitempty"`
-	ClOrdId string `url:"clOrdId,omitempty"`
+	InstId     string `url:"instId"`
+	InstFamily string `url:"instFamily,omitempty"`
+	OrdId      string `url:"ordId,omitempty"`
+	ClOrdId    string `url:"clOrdId,omitempty"`
 }
 
 type GetOrderResponse struct {
