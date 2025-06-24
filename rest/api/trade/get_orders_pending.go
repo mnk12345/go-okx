@@ -14,10 +14,13 @@ func NewGetOrdersPending(param *GetOrdersQueryParam) (api.IRequest, api.IRespons
 
 type GetOrdersQueryParam struct {
 	api.PagingParam
-	InstType string `url:"instType,omitempty"`
-	Uly      string `url:"uly,omitempty"`
-	InstId   string `url:"instId,omitempty"`
-	OrdType  string `url:"ordType,omitempty"`
-	State    string `url:"state,omitempty"`
-	Category string `url:"category,omitempty"`
+	InstType   string `url:"instType,omitempty"`
+	Uly        string `url:"uly,omitempty"`
+	InstFamily string `url:"instFamily,omitempty"`
+	InstId     string `url:"instId,omitempty"`
+	OrdType    string `url:"ordType,omitempty"`
+	State      string `url:"state,omitempty"`
+	After      string `url:"after,omitempty"`
+	Before     string `url:"before,omitempty"`
+	Category   string `url:"category,omitempty"`
 }
