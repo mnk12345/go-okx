@@ -13,11 +13,17 @@ func NewGetBills(param *GetBillsParam) (api.IRequest, api.IResponse) {
 type GetBillsParam struct {
 	api.PagingParam
 	InstType string `url:"instType,omitempty"`
+	InstId   string `url:"instId,omitempty"`
 	Ccy      string `url:"ccy,omitempty"`
 	MgnMode  string `url:"mgnMode,omitempty"`
 	CtType   string `url:"ctType,omitempty"`
 	Type     string `url:"type,omitempty"`
 	SubType  string `url:"subType,omitempty"`
+	After    string `url:"after,omitempty"`
+	Before   string `url:"before,omitempty"`
+	Begin    string `url:"begin,omitempty"`
+	End      string `url:"end,omitempty"`
+	Limit    string `url:"limit,omitempty"`
 }
 
 type GetBillsResponse struct {
