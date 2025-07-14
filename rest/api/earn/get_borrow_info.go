@@ -1,6 +1,8 @@
 package earn
 
 import (
+	"encoding/json"
+
 	"github.com/iaping/go-okx/rest/api"
 )
 
@@ -22,10 +24,10 @@ type GetBorrowInfoResponse struct {
 }
 
 type BorrowInfo struct {
-	Ccy       string `json:"ccy"`
-	AvgAmt    string `json:"avgAmt"`
-	AvgAmtUsd string `json:"avgAmtUsd"`
-	AvgRate   string `json:"avgRate"`
-	PreRate   string `json:"preRate"`
-	EstRate   string `json:"estRate"`
+	Ccy       json.RawMessage `json:"ccy"`
+	AvgAmt    json.RawMessage `json:"avgAmt"`
+	AvgAmtUsd json.RawMessage `json:"avgAmtUsd"`
+	AvgRate   json.RawMessage `json:"avgRate"`
+	PreRate   json.RawMessage `json:"preRate"`
+	EstRate   json.RawMessage `json:"estRate"`
 }
