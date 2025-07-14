@@ -24,7 +24,7 @@ type GetBorrowInfoResponse struct {
 }
 
 type BorrowInfo struct {
-	Ccy       json.RawMessage `json:"ccy"`
+	Ccy       string          `json:"ccy"`
 	AvgAmt    json.RawMessage `json:"avgAmt"`
 	AvgAmtUsd json.RawMessage `json:"avgAmtUsd"`
 	AvgRate   json.RawMessage `json:"avgRate"`
