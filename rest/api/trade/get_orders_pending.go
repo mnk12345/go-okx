@@ -22,4 +22,7 @@ type GetOrdersQueryParam struct {
 	After    string `url:"after,omitempty"`
 	Before   string `url:"before,omitempty"`
 	Category string `url:"category,omitempty"`
+	Begin    string `url:"begin,omitempty"`
+	End      string `url:"end,omitempty"`
+	Limit    string `url:"limit,omitempty"`
 }
